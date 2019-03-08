@@ -14,11 +14,13 @@
 
 public class Print_01 {
     public Print_01 print_triangle(int length, int thickness) {
-        for (int i = 0; i < thickness; i++) {
-            System.out.print("#");
+        for (int i = 1; i < thickness; i++) {
+            for (int j = 0; j < thickness; j++) {
+                System.out.print("#");
+            }
+            System.out.println();
         }
-        System.out.println();
-        for (int i = 2; i <= length; i++) {
+        for (int i = thickness; i <= length; i++) {
             for (int j = 0; j < i; j++) {
                 System.out.print("#");
             }
