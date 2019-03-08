@@ -9,10 +9,9 @@
  * @CreateDate: 2019/3/7 20:36
  * @UpdateUser: 万世成
  * @UpdateDate: 2019/3/7 20:41
- * @UpdateRemark: none
+ * @UpdateRemark: 作为镂空三角形参考
  * @Version: 0.0.1
  * @JDKVesion: 1.8.0
- * @TODO: 需要把三角形的厚度加上
  * @Copyright (c)   2019/3/7 20:33
  */
 
@@ -23,7 +22,9 @@ public class Print {
                 System.out.print("#");
 
                 int tmp = 0;
-                while (i > 2 && i < length && tmp < (i - 2) && j < (i - 1)) {
+                int tmp1 = i - 2;   // 打印每行的空格数
+                int tmp2 = i - 1;   // 使j遍历到i-2再打印边界符号
+                while (i > 2 && i < length && tmp < tmp1 && j < tmp2) {
                     System.out.print(" ");
                     tmp++;            j++;
                 }
