@@ -18,8 +18,9 @@ public class Main {
     public static void main(String[] args) {
         Check ch = new Check();
         ch.check();
-        //  调用打印方法
-//        Print print = new Print().print_triangle(length);
-        Print_01 print = new Print_01().print_triangle(ch.getLength(), ch.getThickness());
+
+//        Print print = new Print().print_triangle(ch.getLength());
+//        Print_01 print = new Print_01().print_triangle(ch.getLength(), ch.getThickness());
+        Print_02 print = new Print_02().print_triangle(ch.getLength(),ch.getThickness());
     }
 }
