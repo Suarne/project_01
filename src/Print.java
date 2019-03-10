@@ -51,9 +51,8 @@ public class Print {
     }
 
     public Print print_pyramid(int height, int layers) {
-        // @TODO: 高度小于层数时，会产生错位，需要修改bug
         for(int i = 1; i <= layers; i++) { // 层数
-            print_pyramid_single(height, i,height-i);
+            print_pyramid_single(height, i,layers-i);
             System.out.println();
         }
 
