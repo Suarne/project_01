@@ -17,7 +17,7 @@ import java.util.Scanner;
  * @UpdateRemark: 加上了三角形的厚度
  * @Version: 0.1.0
  * @JDKVesion: 1.8.0
- * @TODO: 需要把加上厚度的三角新镂空
+ * @TODO：实现GUI功能
  * @Copyright (c)   2019/3/7 20:33
  */
 
@@ -69,14 +69,14 @@ public class Main {
                     break;
         }
     }
-
+    // 清屏函数
     public static void clear() throws AWTException {
         Robot robot = new Robot();
         robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_F5);
         robot.keyRelease(KeyEvent.VK_CONTROL);
     }
-
+    // 实现重复选择功能（自动的）
     public static void remain() throws AWTException, InterruptedException {
         Thread.currentThread().sleep(3000);
         Main.clear();

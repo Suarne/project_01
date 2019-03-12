@@ -59,7 +59,7 @@ public class Print {
         return null;
     }
 
-    public Print print_pyramid_single(int height, int layers, int z) {
+    private Print print_pyramid_single(int height, int layers, int z) {
         String a = "/";
         String b = "\\";
         String c = "--";

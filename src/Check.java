@@ -38,7 +38,6 @@ public class Check {
             }
         } catch (Exception e) {    //   异常数值判断
             System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
-            e.printStackTrace();
         }
     }
 
@@ -56,7 +55,6 @@ public class Check {
             }
         } catch (Exception e) {    //   异常数值判断
             System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
-            e.printStackTrace();
         }
     }
 
@@ -77,7 +75,6 @@ public class Check {
             }
         } catch (Exception e) {    //   异常数值判断
             System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
-            e.printStackTrace();
         }
     }
 
@@ -103,7 +100,6 @@ public class Check {
             }
         } catch (Exception e) {    //   异常数值判断
             System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
-            e.printStackTrace();
         }
     }
 
