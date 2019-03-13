@@ -36,7 +36,7 @@ public class Main {
             Scanner input = new Scanner(System.in);
             fun = input.nextInt();
             if ( fun > 4 || fun <= 0) {
-                System.out.println("没有这个功能，请你重新选择");
+                System.out.println("没有这个功能，请你重新选择...");
                 Main.remain();
             }
         } catch (Exception e) {

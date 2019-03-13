@@ -12,6 +12,7 @@
  * @Copyright (c)   2019/3/8 21:49
  */
 
+import java.awt.*;
 import java.util.Scanner;
 
 public class Check {
@@ -21,7 +22,7 @@ public class Check {
     private int height    = 0;
     private int layers    = 0;
 
-    public void check_triangle() {
+    public void check_triangle() throws InterruptedException, AWTException {
         try {
             Scanner input = new Scanner(System.in);
             System.out.print("请输入等腰三角形的直角边长：");
@@ -31,17 +32,18 @@ public class Check {
             //  异常数值判断
             if (length <= 0 || thickness <= 0) {
                 System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
-                System.exit(0);
+                Main.remain();
             } else if (length < thickness) {
                 System.out.println("边长必须大于等于厚度！！！");
-                System.exit(0);
+                Main.remain();
             }
         } catch (Exception e) {    //   异常数值判断
             System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
+            Main.remain();
         }
     }
 
-    public void check_pyramid() {
+    public void check_pyramid() throws InterruptedException, AWTException {
         try {
             Scanner input = new Scanner(System.in);
             System.out.print("请输入金字塔的高度：");
@@ -51,14 +53,15 @@ public class Check {
             //  异常数值判断
             if (height <= 0 || layers <= 0) {
                 System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
-                System.exit(0);
+                Main.remain();
             }
         } catch (Exception e) {    //   异常数值判断
             System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
+            Main.remain();
         }
     }
 
-    public void check_square() {
+    public void check_square() throws InterruptedException, AWTException {
         try {
             Scanner input = new Scanner(System.in);
             System.out.print("请输入正方形的边长：");
@@ -68,17 +71,18 @@ public class Check {
             //  异常数值判断
             if (length <= 0 || thickness <= 0) {
                 System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
-                System.exit(0);
+                Main.remain();
             } else if (length < thickness) {
                 System.out.println("边长必须大于等于厚度！！！");
-                System.exit(0);
+                Main.remain();
             }
         } catch (Exception e) {    //   异常数值判断
             System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
+            Main.remain();
         }
     }
 
-    public void check_rectangle() {
+    public void check_rectangle() throws InterruptedException, AWTException {
         try {
             Scanner input = new Scanner(System.in);
             System.out.print("请输入长方形的长：");
@@ -90,16 +94,17 @@ public class Check {
             //  异常数值判断
             if (length <= 0 || width <= 0 || thickness <= 0) {
                 System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
-                System.exit(0);
+                Main.remain();
             } else if (length < thickness || width < thickness) {
                 System.out.println("边长必须大于等于厚度！！！");
-                System.exit(0);
+                Main.remain();
             } else if (length < width) {
                 System.out.println("长必须大于宽！！！");
-                System.exit(0);
+                Main.remain();
             }
         } catch (Exception e) {    //   异常数值判断
             System.out.println("输入有误，请输入正整数！！！（例如1、5、12...）");
+            Main.remain();
         }
     }
 
