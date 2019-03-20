@@ -1,7 +1,4 @@
-import sun.security.util.SecurityConstants;
-
 import java.awt.*;
-import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.util.Scanner;
 
@@ -44,7 +41,7 @@ public class Main {
             Main.remain();
         }
         // 功能选择
-        switch (fun) {
+/*        switch (fun) {
             case 1:
                 ch.check_triangle();
                 Print print = new Print().print_triangle(ch.getLength(), ch.getThickness());
@@ -67,7 +64,7 @@ public class Main {
                 break;
                 default:
                     break;
-        }
+        }*/
     }
     // 清屏函数
     public static void clear() throws AWTException {
